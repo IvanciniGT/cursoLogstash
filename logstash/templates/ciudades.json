@@ -1,0 +1,11 @@
+{
+  "index_patterns": ["ciudades-*"],  
+  
+  "mappings": {
+    "properties": {
+      "accentcity": { "type": "text" },
+      "population": { "type": "long" },
+      "posicion": { "type": "geo_point" }
+    }
+  }
+}

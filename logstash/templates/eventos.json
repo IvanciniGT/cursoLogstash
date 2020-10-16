@@ -1,0 +1,15 @@
+{
+  "index_patterns": ["eventos-*"],  
+  
+  "mappings": {
+    "properties": {
+      "ip": { "type": "ip" },
+      "respuesta": { "type": "integer" },
+      "geoip": {
+          "properties": {
+              "location": { "type": "geo_point" }
+          }
+      }
+    }
+  }
+}

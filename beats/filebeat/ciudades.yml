@@ -1,0 +1,7 @@
+filebeat.inputs:
+- type: log
+  paths: 
+    - /data/worldcitiespop.csv
+
+output.logstash:
+    hosts: [ "172.31.0.228:5044" ]
